@@ -5,8 +5,6 @@
  * digit. For example, IDs of length 12 are not expected, or words that are not
  * IDs.
  */
-
-
 package sis2;
 
 import java.io.File;
@@ -31,11 +29,12 @@ import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 
 /**
- * @version 1.0 07/03/2018
+ * @version 2.0 05/04/2018
  * @author Alejandro Moya García
  */
 public class ExcelController {
-    private int count=0;
+
+    private int count = 0;
     public static ExcelController instance;
     private String filePath;
     private Workbook workbook;
@@ -102,29 +101,28 @@ public class ExcelController {
     }
 
     /**
-     * Iterates over the rows and cells of the document.
+     * Iterates over the rows and cells of the document, materializes employees
+     * and perform actions by calling other methods.
      */
     public void iterateDocument() {
         Sheet datatypeSheet = workbook.getSheetAt(SHEET_NUMBER);
         Iterator<Row> iterator = datatypeSheet.iterator();
-     
 
-        if (iterator.hasNext()){
-           /* skip headers row */
-            iterator.next(); 
+        if (iterator.hasNext()) {
+            /* skip headers row */
+            iterator.next();
         }
-        
 
         while (iterator.hasNext()) {
             Row currentRow = iterator.next();
             Employee employee = initEmployee(currentRow);
-            
+
             /* validate ID */
             validateID(employee);
 
             /* validate bank account and calculate IBAN */
             calculateIBAN(employee);
-            
+
             /* Generate email */
             generateEmail(employee);
         }
@@ -144,14 +142,14 @@ public class ExcelController {
             LOGGER.info("Row number: "
                     + String.valueOf(employee.getRowID() + 1)
                     + " contains an empty ID ");
-            addEmployeeXML(employee,"id");
+            addEmployeeXML(employee, "id");
         } else {
 
             if (employee.correctID()) {
                 /* ID was wrong */
                 updateCellValue(employee.getRowID(),
                         getColumnIndexOf("ID"), employee.getID().toString());
-                
+
             }
             if (this.ids.contains(employee.getID().toString()/* cellValue */)) {
                 /* duplicated */
@@ -159,7 +157,7 @@ public class ExcelController {
                         + String.valueOf(employee.getRowID() + 1)
                         + " contains a duplicated ID: "
                         + employee.getID().toString());
-                addEmployeeXML(employee,"id");
+                addEmployeeXML(employee, "id");
             } else {
                 this.ids.add(employee.getID().toString());
             }
@@ -167,7 +165,7 @@ public class ExcelController {
     }
 
     /**
-     * verifies that the account code contained in cellCode is correct. If it is
+     * Verifies that the account code contained in cellCode is correct. If it is
      * wrong it corrects it. Then it calculates the IBAN number using the
      * account number and the country code.
      *
@@ -178,14 +176,14 @@ public class ExcelController {
         if (emp.getWrongCode().isEmpty()) {
             /* empty cell */
             LOGGER.info("Row number: "
-                    + String.valueOf(emp.getRowID()+ 1)
+                    + String.valueOf(emp.getRowID() + 1)
                     + " contains an empty Bank Account code ");
         } else {
-            
+
             corrected = emp.correctAccountCode();
             emp.calculateIBAN();
             updateCellValue(emp.getRowID(),
-                        getColumnIndexOf("IBAN"), emp.getIBAN());
+                    getColumnIndexOf("IBAN"), emp.getIBAN());
             if (corrected) {
                 /* Account code was wrong */
                 updateCellValue(emp.getRowID(),
@@ -199,20 +197,21 @@ public class ExcelController {
         }
 
     }
-    
+
     /**
      * Generates an email for the employee and stores it in the excel file.
-     * @param employee 
+     *
+     * @param employee
      */
-    public void generateEmail(Employee employee){
-        int emailIndex=getColumnIndexOf("Email");
-                
-        String email=employee.generateEmail();
+    public void generateEmail(Employee employee) {
+        int emailIndex = getColumnIndexOf("Email");
+
+        String email = employee.generateEmail();
         updateCellValue(employee.getRowID(), emailIndex, email);
     }
 
     /**
-     * Saves the changes made in the IDs
+     * Saves the changes made in the excel file.
      *
      * @throws IOException
      */
@@ -223,12 +222,9 @@ public class ExcelController {
         outputStream.close();
     }
 
-  
-    
-
     /**
-     * Adds a empEle and its data such as name, surname, company name... to the
-     * specified XML
+     * Adds a employee and its data such as name, surname, company name...
+     * to the specified XML.
      *
      * @param currentRow
      */
@@ -251,8 +247,8 @@ public class ExcelController {
                 empEle.addContent(ele);
             }
             duplicatedBlankID.addContent(empEle);
-            
-        }else if(type.equals("account")){
+
+        } else if (type.equals("account")) {
             values = new String[ACCOUNT_ATTRIBUTES.length];
             values[0] = employee.getName();
             values[1] = employee.getSurname1();
@@ -260,25 +256,23 @@ public class ExcelController {
             values[3] = employee.getCompanyName();
             values[4] = employee.getWrongCode();
             values[5] = employee.getIBAN();
-            
-            
+
             empEle.setAttribute("id", String.valueOf(employee.getRowID() + 1));
             for (int i = 0; i < ACCOUNT_ATTRIBUTES.length; i++) {
                 Element ele = new Element(ACCOUNT_ATTRIBUTES[i]);
                 ele.setText(values[i]);
                 empEle.addContent(ele);
             }
-          
+
             wrongAccounts.addContent(empEle);
         }
-        
+
     }
 
     /**
      * Saves the XML with information of workers whose ID is blank or duplicated
-     * in the path specified.
+     * or whose account number is wrong.
      *
-     * @param path
      * @throws IOException
      */
     public void generateXML() throws IOException {
@@ -294,6 +288,11 @@ public class ExcelController {
         outputAccount.output(accountErrors, new FileWriter(ACCOUNT_ERRORS_PATH));
     }
 
+    /**
+     * Materializes an employee from the excel File.
+     * @param row
+     * @return the emloyee object initialized
+     */
     public Employee initEmployee(Row row) {
         int IDIndex = getColumnIndexOf("ID");
         int accountCodeIndex = getColumnIndexOf("AccountCode");
@@ -306,8 +305,8 @@ public class ExcelController {
         int companyNameIndex = getColumnIndexOf("CompanyName");
         Employee employee = new Employee(row.getRowNum());
         /* ID */
-        employee.setID(new ID(getStringValueOf(row.getCell(IDIndex
-            , MissingCellPolicy.CREATE_NULL_AS_BLANK))));
+        employee.setID(new ID(getStringValueOf(row.getCell(IDIndex,
+                 MissingCellPolicy.CREATE_NULL_AS_BLANK))));
         /* Bank Account Code and IBAN */
         BankAccountCode bAC = new BankAccountCode(getStringValueOf(row.getCell(
                 accountCodeIndex, MissingCellPolicy.CREATE_NULL_AS_BLANK)));
@@ -315,18 +314,17 @@ public class ExcelController {
                 countryCodeIndex, MissingCellPolicy.CREATE_NULL_AS_BLANK)));
         employee.setBankAccount(bAC);
         /* Name, First Surname, Second Surname*/
-        employee.setName(getStringValueOf(row.getCell(nameIndex
-                , MissingCellPolicy.CREATE_NULL_AS_BLANK)));
-        employee.setSurname1(getStringValueOf(row.getCell(surname1Index
-                , MissingCellPolicy.CREATE_NULL_AS_BLANK)));
-        employee.setSurname2(getStringValueOf(row.getCell(surname2Index
-                , MissingCellPolicy.CREATE_NULL_AS_BLANK)));
+        employee.setName(getStringValueOf(row.getCell(nameIndex,
+                 MissingCellPolicy.CREATE_NULL_AS_BLANK)));
+        employee.setSurname1(getStringValueOf(row.getCell(surname1Index,
+                 MissingCellPolicy.CREATE_NULL_AS_BLANK)));
+        employee.setSurname2(getStringValueOf(row.getCell(surname2Index,
+                 MissingCellPolicy.CREATE_NULL_AS_BLANK)));
         /* Category and company Name */
-        employee.setCategory(getStringValueOf(row.getCell(categoryIndex
-                , MissingCellPolicy.CREATE_NULL_AS_BLANK)));
-        employee.setCompanyName(getStringValueOf(row.getCell(companyNameIndex
-                , MissingCellPolicy.CREATE_NULL_AS_BLANK)));
-        
+        employee.setCategory(getStringValueOf(row.getCell(categoryIndex,
+                 MissingCellPolicy.CREATE_NULL_AS_BLANK)));
+        employee.setCompanyName(getStringValueOf(row.getCell(companyNameIndex,
+                 MissingCellPolicy.CREATE_NULL_AS_BLANK)));
 
         return employee;
     }
@@ -365,6 +363,7 @@ public class ExcelController {
 
     /**
      * Method created to help with junit testing.
+     *
      * @param row
      * @param col
      * @return the value of cell row,col
@@ -375,6 +374,5 @@ public class ExcelController {
                 MissingCellPolicy.CREATE_NULL_AS_BLANK);
         return cell.getStringCellValue();
     }
-        
 
 }

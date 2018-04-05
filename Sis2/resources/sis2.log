@@ -4138,3 +4138,589 @@ abr 04, 2018 11:52:11 PM sis2.Main main
 INFORMACIÓN: Updating IDs
 abr 04, 2018 11:52:12 PM sis2.Main main
 INFORMACIÓN: Generating XML
+abr 05, 2018 6:45:55 PM sis2.Main main
+INFORMACIÓN: Starting application
+abr 05, 2018 6:45:55 PM sis2.Main main
+INFORMACIÓN: Reading file: /home/alex/NetBeansProjects/Sis2/resources/SistemasInformacionII.xlsx
+abr 05, 2018 6:45:58 PM sis2.Main main
+INFORMACIÓN: Validating IDs
+abr 05, 2018 6:45:58 PM sis2.ExcelController validateID
+INFORMACIÓN: Row number: 3 contains a duplicated ID: X9924125Q
+abr 05, 2018 6:45:58 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32145464978452163421 was wrong. Control digit 1 is 1 instead of 9
+abr 05, 2018 6:45:58 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32145464978452163421 was wrong. Control digit 2 is 3 instead of 7
+abr 05, 2018 6:45:58 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 3 contains a wrong account code 
+abr 05, 2018 6:45:58 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 31645124013461205164 was wrong. Control digit 1 is 4 instead of 0
+abr 05, 2018 6:45:58 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 31645124013461205164 was wrong. Control digit 2 is 7 instead of 1
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 4 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 65614874115615445616 was wrong. Control digit 2 is 6 instead of 1
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 5 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32569523636220165156 was wrong. Control digit 1 is 0 instead of 6
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32569523636220165156 was wrong. Control digit 2 is 1 instead of 3
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 6 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 24561937321546497521 was wrong. Control digit 1 is 5 instead of 3
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 7 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36520125478451012515 was wrong. Control digit 1 is 6 instead of 4
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36520125478451012515 was wrong. Control digit 2 is 3 instead of 7
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 8 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20125003625201112544 was wrong. Control digit 1 is 3 instead of 6
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20125003625201112544 was wrong. Control digit 2 is 0 instead of 2
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 9 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21651484840980008984 was wrong. Control digit 1 is 6 instead of 8
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21651484840980008984 was wrong. Control digit 2 is 9 instead of 4
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 10 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: Y1337652C control digit is wrong, correct control digit is: D
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: Y1337652C control digit is wrong, correct control digit is: D
+abr 05, 2018 6:45:59 PM sis2.ExcelController validateID
+INFORMACIÓN: Row number: 12 contains a duplicated ID: Y1337652D
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21564975463245467995 was wrong. Control digit 1 is 2 instead of 4
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21564975463245467995 was wrong. Control digit 2 is 4 instead of 6
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 12 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32566221452587754554 was wrong. Control digit 1 is 5 instead of 4
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32566221452587754554 was wrong. Control digit 2 is 2 instead of 5
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 13 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23215465445456411515 was wrong. Control digit 1 is 3 instead of 4
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23215465445456411515 was wrong. Control digit 2 is 1 instead of 4
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 14 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: X1673150A control digit is wrong, correct control digit is: S
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 00750184300702510000 was wrong. Control digit 2 is 1 instead of 0
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 15 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ExcelController validateID
+INFORMACIÓN: Row number: 16 contains a duplicated ID: X1673150S
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21584976342154655487 was wrong. Control digit 1 is 9 instead of 3
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21584976342154655487 was wrong. Control digit 2 is 0 instead of 4
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 16 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 25894363125485700145 was wrong. Control digit 1 is 4 instead of 1
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 25894363125485700145 was wrong. Control digit 2 is 7 instead of 2
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 17 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 96431245768150005156 was wrong. Control digit 1 is 1 instead of 7
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 96431245768150005156 was wrong. Control digit 2 is 1 instead of 6
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 18 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 25030000694574745458 was wrong. Control digit 1 is 1 instead of 6
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 25030000694574745458 was wrong. Control digit 2 is 1 instead of 9
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 19 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 15953684521254695203 was wrong. Control digit 1 is 8 instead of 5
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 15953684521254695203 was wrong. Control digit 2 is 1 instead of 2
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 20 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20960043013096200000 was wrong. Control digit 2 is 2 instead of 1
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 21 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: Y0806930T control digit is wrong, correct control digit is: N
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 00750184300702510000 was wrong. Control digit 2 is 1 instead of 0
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 22 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: Y0806930T control digit is wrong, correct control digit is: N
+abr 05, 2018 6:45:59 PM sis2.ExcelController validateID
+INFORMACIÓN: Row number: 23 contains a duplicated ID: Y0806930N
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23455254353263234457 was wrong. Control digit 1 is 9 instead of 3
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23455254353263234457 was wrong. Control digit 2 is 4 instead of 5
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 23 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: 09741995Z control digit is wrong, correct control digit is: T
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20960043022159000000 was wrong. Control digit 2 is 3 instead of 2
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 25 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 12669681515112121210 was wrong. Control digit 1 is 1 instead of 5
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 26 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: 09779552S control digit is wrong, correct control digit is: K
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 12121455156115515151 was wrong. Control digit 1 is 5 instead of 1
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 27 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 56187775465550000651 was wrong. Control digit 1 is 3 instead of 4
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 56187775465550000651 was wrong. Control digit 2 is 1 instead of 6
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 28 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 25516848741156151054 was wrong. Control digit 1 is 0 instead of 7
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 25516848741156151054 was wrong. Control digit 2 is 2 instead of 4
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 29 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 64578946120051516490 was wrong. Control digit 1 is 7 instead of 1
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 64578946120051516490 was wrong. Control digit 2 is 4 instead of 2
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 30 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 34698752134600549403 was wrong. Control digit 1 is 7 instead of 1
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 34698752134600549403 was wrong. Control digit 2 is 1 instead of 3
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 31 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 66649444572310000255 was wrong. Control digit 1 is 1 instead of 5
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 66649444572310000255 was wrong. Control digit 2 is 6 instead of 7
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 32 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23185484005641685100 was wrong. Control digit 1 is 4 instead of 0
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23185484005641685100 was wrong. Control digit 2 is 6 instead of 0
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 33 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 52198484632100515144 was wrong. Control digit 1 is 7 instead of 6
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 52198484632100515144 was wrong. Control digit 2 is 5 instead of 3
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 34 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36250012544785523365 was wrong. Control digit 1 is 8 instead of 5
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36250012544785523365 was wrong. Control digit 2 is 0 instead of 4
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 35 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 22515651565640081000 was wrong. Control digit 1 is 9 instead of 5
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 22515651565640081000 was wrong. Control digit 2 is 1 instead of 6
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 36 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21508149675421346497 was wrong. Control digit 1 is 1 instead of 6
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 37 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: 24304263F control digit is wrong, correct control digit is: W
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21346154203164978451 was wrong. Control digit 1 is 5 instead of 2
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 38 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 25187786651225455548 was wrong. Control digit 1 is 3 instead of 6
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 25187786651225455548 was wrong. Control digit 2 is 1 instead of 5
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 39 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23164897632213030615 was wrong. Control digit 2 is 4 instead of 3
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 40 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 96536214585214585214 was wrong. Control digit 1 is 8 instead of 5
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 96536214585214585214 was wrong. Control digit 2 is 6 instead of 8
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 41 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 85461325461978750005 was wrong. Control digit 1 is 2 instead of 4
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 85461325461978750005 was wrong. Control digit 2 is 5 instead of 6
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 42 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 24587946012003165464 was wrong. Control digit 2 is 3 instead of 1
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 43 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: 24571671B control digit is wrong, correct control digit is: N
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20960043083071400000 was wrong. Control digit 2 is 7 instead of 8
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 44 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20960043092158800000 was wrong. Control digit 2 is 4 instead of 9
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 45 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21654587165156484454 was wrong. Control digit 1 is 9 instead of 1
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21654587165156484454 was wrong. Control digit 2 is 8 instead of 6
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 46 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 51651681001210656510 was wrong. Control digit 1 is 9 instead of 0
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 51651681001210656510 was wrong. Control digit 2 is 6 instead of 0
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 47 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 66552211448855332200 was wrong. Control digit 1 is 1 instead of 4
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 48 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: 09548827W control digit is wrong, correct control digit is: D
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: X8996448Q control digit is wrong, correct control digit is: K
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 01821135900205540000 was wrong. Control digit 2 is 1 instead of 0
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 50 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 22631245246916432102 was wrong. Control digit 1 is 5 instead of 2
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 22631245246916432102 was wrong. Control digit 2 is 2 instead of 4
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 51 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: 09548295T control digit is wrong, correct control digit is: Y
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20960043013075700000 was wrong. Control digit 2 is 4 instead of 1
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 52 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 25635478521002541225 was wrong. Control digit 1 is 3 instead of 5
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 53 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32154697855423121000 was wrong. Control digit 1 is 1 instead of 8
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32154697855423121000 was wrong. Control digit 2 is 9 instead of 5
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 54 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36521452326500658485 was wrong. Control digit 1 is 7 instead of 3
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36521452326500658485 was wrong. Control digit 2 is 3 instead of 2
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 55 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20008521458775113366 was wrong. Control digit 1 is 5 instead of 4
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20008521458775113366 was wrong. Control digit 2 is 2 instead of 5
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 56 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 51651487560005118185 was wrong. Control digit 1 is 9 instead of 5
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 51651487560005118185 was wrong. Control digit 2 is 1 instead of 6
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 57 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20036525587451152165 was wrong. Control digit 1 is 2 instead of 5
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20036525587451152165 was wrong. Control digit 2 is 5 instead of 8
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 58 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: 09611087B control digit is wrong, correct control digit is: P
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21651651472511133551 was wrong. Control digit 1 is 8 instead of 4
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21651651472511133551 was wrong. Control digit 2 is 1 instead of 7
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 60 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.ID correct
+INFORMACIÓN: 01234567J control digit is wrong, correct control digit is: L
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20960043013000100000 was wrong. Control digit 2 is 3 instead of 1
+abr 05, 2018 6:45:59 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 61 contains a wrong account code 
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36585214520025478551 was wrong. Control digit 1 is 2 instead of 5
+abr 05, 2018 6:45:59 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36585214520025478551 was wrong. Control digit 2 is 9 instead of 2
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 62 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 12548523695214585214 was wrong. Control digit 1 is 4 instead of 6
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 12548523695214585214 was wrong. Control digit 2 is 6 instead of 9
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 63 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 31624561312546920007 was wrong. Control digit 1 is 0 instead of 3
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 31624561312546920007 was wrong. Control digit 2 is 4 instead of 1
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 64 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36154231642500312566 was wrong. Control digit 1 is 7 instead of 6
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36154231642500312566 was wrong. Control digit 2 is 1 instead of 4
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 65 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 44875664957231645789 was wrong. Control digit 1 is 1 instead of 9
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 44875664957231645789 was wrong. Control digit 2 is 2 instead of 5
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 66 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.ID correct
+INFORMACIÓN: 09548827W control digit is wrong, correct control digit is: D
+abr 05, 2018 6:46:00 PM sis2.ExcelController validateID
+INFORMACIÓN: Row number: 67 contains a duplicated ID: 09548827D
+abr 05, 2018 6:46:00 PM sis2.ID correct
+INFORMACIÓN: 09548486R control digit is wrong, correct control digit is: J
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 33620012547852100256 was wrong. Control digit 1 is 9 instead of 5
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 33620012547852100256 was wrong. Control digit 2 is 3 instead of 4
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 68 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 33218885651445121022 was wrong. Control digit 1 is 4 instead of 6
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 33218885651445121022 was wrong. Control digit 2 is 4 instead of 5
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 69 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 62581542003690044508 was wrong. Control digit 1 is 7 instead of 0
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 62581542003690044508 was wrong. Control digit 2 is 1 instead of 0
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 70 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 25165151488666365100 was wrong. Control digit 1 is 1 instead of 4
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 25165151488666365100 was wrong. Control digit 2 is 1 instead of 8
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 71 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.ID correct
+INFORMACIÓN: 24304263R control digit is wrong, correct control digit is: W
+abr 05, 2018 6:46:00 PM sis2.ExcelController validateID
+INFORMACIÓN: Row number: 72 contains a duplicated ID: 24304263W
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20960043013000100000 was wrong. Control digit 2 is 3 instead of 1
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 72 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36952365200014425254 was wrong. Control digit 1 is 0 instead of 2
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36952365200014425254 was wrong. Control digit 2 is 2 instead of 0
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 73 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 65168874651561561500 was wrong. Control digit 2 is 4 instead of 5
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 74 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.ExcelController validateID
+INFORMACIÓN: Row number: 75 contains a duplicated ID: 01234567L
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20960583861234500000 was wrong. Control digit 2 is 3 instead of 6
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 75 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21416325881510005514 was wrong. Control digit 2 is 1 instead of 8
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 76 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32628484114115151115 was wrong. Control digit 1 is 5 instead of 1
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32628484114115151115 was wrong. Control digit 2 is 0 instead of 1
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 77 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.ID correct
+INFORMACIÓN: 09741138Z control digit is wrong, correct control digit is: V
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32562000125478520015 was wrong. Control digit 2 is 4 instead of 2
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 78 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.ExcelController validateID
+INFORMACIÓN: Row number: 79 contains an empty ID 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20960056163231500000 was wrong. Control digit 2 is 3 instead of 6
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 79 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 63516541848944000984 was wrong. Control digit 2 is 2 instead of 4
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 80 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23658965214585223202 was wrong. Control digit 2 is 7 instead of 1
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 81 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32658012547712548745 was wrong. Control digit 1 is 3 instead of 5
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32658012547712548745 was wrong. Control digit 2 is 6 instead of 4
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 82 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23652365232254222000 was wrong. Control digit 1 is 1 instead of 2
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23652365232254222000 was wrong. Control digit 2 is 4 instead of 3
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 83 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.ExcelController validateID
+INFORMACIÓN: Row number: 84 contains an empty ID 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20012541100023365233 was wrong. Control digit 2 is 5 instead of 0
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 84 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32584216551684051000 was wrong. Control digit 1 is 9 instead of 5
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32584216551684051000 was wrong. Control digit 2 is 7 instead of 5
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 85 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 55065688611051056105 was wrong. Control digit 1 is 7 instead of 6
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 55065688611051056105 was wrong. Control digit 2 is 6 instead of 1
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 86 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 95485212145484010000 was wrong. Control digit 1 is 3 instead of 1
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 95485212145484010000 was wrong. Control digit 2 is 1 instead of 4
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 87 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21856333256985542360 was wrong. Control digit 1 is 1 instead of 2
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 21856333256985542360 was wrong. Control digit 2 is 2 instead of 5
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 88 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36245978463245679001 was wrong. Control digit 1 is 1 instead of 4
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 36245978463245679001 was wrong. Control digit 2 is 3 instead of 6
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 89 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 31245164326597845124 was wrong. Control digit 1 is 1 instead of 3
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 31245164326597845124 was wrong. Control digit 2 is 5 instead of 2
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 90 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23221158422545471411 was wrong. Control digit 1 is 2 instead of 4
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 23221158422545471411 was wrong. Control digit 2 is 5 instead of 2
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 91 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32574512025411002255 was wrong. Control digit 2 is 8 instead of 2
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 92 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 20960043073468900000 was wrong. Control digit 2 is 1 instead of 7
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 93 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.ID correct
+INFORMACIÓN: 09548443W control digit is wrong, correct control digit is: Q
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 31215643125060225021 was wrong. Control digit 1 is 8 instead of 1
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 31215643125060225021 was wrong. Control digit 2 is 5 instead of 2
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 94 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.ID correct
+INFORMACIÓN: 09749147P control digit is wrong, correct control digit is: E
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 85550564156165145610 was wrong. Control digit 1 is 7 instead of 1
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 85550564156165145610 was wrong. Control digit 2 is 2 instead of 5
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 95 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 65165654648886005001 was wrong. Control digit 1 is 9 instead of 6
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 65165654648886005001 was wrong. Control digit 2 is 1 instead of 4
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 96 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 26221011898048788896 was wrong. Control digit 1 is 6 instead of 8
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 26221011898048788896 was wrong. Control digit 2 is 2 instead of 9
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 97 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 12548521458742146695 was wrong. Control digit 1 is 5 instead of 4
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 12548521458742146695 was wrong. Control digit 2 is 1 instead of 5
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 98 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 51556584121251000254 was wrong. Control digit 1 is 2 instead of 1
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 99 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32541112541220000588 was wrong. Control digit 1 is 8 instead of 5
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 32541112541220000588 was wrong. Control digit 2 is 1 instead of 4
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 100 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 62541122001110105611 was wrong. Control digit 1 is 4 instead of 0
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 62541122001110105611 was wrong. Control digit 2 is 2 instead of 0
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 101 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 65645150005168448896 was wrong. Control digit 1 is 8 instead of 0
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 65645150005168448896 was wrong. Control digit 2 is 6 instead of 0
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 102 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 26551681877651415636 was wrong. Control digit 2 is 0 instead of 7
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 103 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 99558741226555551120 was wrong. Control digit 1 is 8 instead of 2
+abr 05, 2018 6:46:00 PM sis2.BankAccountCode correct
+INFORMACIÓN: Account number 99558741226555551120 was wrong. Control digit 2 is 3 instead of 2
+abr 05, 2018 6:46:00 PM sis2.ExcelController calculateIBAN
+INFORMACIÓN: Row number: 104 contains a wrong account code 
+abr 05, 2018 6:46:00 PM sis2.Main main
+INFORMACIÓN: Updating IDs
+abr 05, 2018 6:46:00 PM sis2.Main main
+INFORMACIÓN: Generating XML

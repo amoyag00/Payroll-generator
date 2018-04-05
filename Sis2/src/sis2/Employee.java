@@ -1,10 +1,15 @@
+/**
+ * Class used to materialize an employee from the excel file.
+ */
 package sis2;
 
 /**
  *
- * @author Alejandro Moya Garcia
+ * @version 2.0 05/04/2018
+ * @author Alejandro Moya García
  */
 public class Employee {
+
     private ID id;
     private BankAccountCode bAC;
     private String name;
@@ -14,12 +19,11 @@ public class Employee {
     private String companyName;
     private String email;
     int rowID;
-    
-    
-    public Employee(int rowID){
+
+    public Employee(int rowID) {
         this.rowID = rowID;
     }
-    
+
     public void setID(ID id) {
         this.id = id;
     }
@@ -39,7 +43,6 @@ public class Employee {
     public int getRowID() {
         return rowID;
     }
-
 
     public String getName() {
         return name;
@@ -80,65 +83,64 @@ public class Employee {
     public void setCompanyName(String companyName) {
         this.companyName = companyName;
     }
-    
-    public String getEmail(){
+
+    public String getEmail() {
         return this.email;
     }
-    
-    
-    
+
+    public String getCorrectedAccountCode() {
+        return this.bAC.getCode();
+    }
+
+    public String getWrongCode() {
+        return this.bAC.getWrongCode();
+    }
+
+    public void calculateIBAN() {
+        this.bAC.calculateIBAN();
+    }
+
+    public String getIBAN() {
+        return this.bAC.getIBAN();
+    }
+
     /**
      * Tells if ID is empty or not.
-     * @return true if ID is empty, false otherwise. 
+     *
+     * @return true if ID is empty, false otherwise.
      */
-    public boolean hasEmptyID(){
+    public boolean hasEmptyID() {
         return this.id.isEmpty();
     }
-    
+
     /**
-     * Corrects an ID by calling an ID object
+     * Corrects an ID by calling an ID object.
+     *
      * @return true if it was corrected, flase otherwise
      */
-    public boolean correctID(){
+    public boolean correctID() {
         return this.id.correct();
     }
-    
+
     /**
      * Corrects an account code by calling a BankAccountCode object
+     *
      * @return true if it was corrected, flase otherwise
      */
-    public boolean correctAccountCode(){
+    public boolean correctAccountCode() {
         return this.bAC.correct();
     }
-    
+
     /**
      * Generates an email based on the employee's name, first surname, second
-     * surname (if any) and company name by calling an Emailgenerator. 
-     * @return 
+     * surname (if any) and company name by calling an Emailgenerator.
+     *
+     * @return
      */
-    public String generateEmail(){
+    public String generateEmail() {
         this.email = EmailGenerator.getInstance().generateEmail(this.name,
                 this.surname1, this.surname2, this.companyName);
         return this.email;
     }
-    
-    
-   
-    public String getCorrectedAccountCode(){
-        return this.bAC.getCode();
-    }
-    
-    public String getWrongCode(){
-        return this.bAC.getWrongCode();
-    }
-    
-    public void calculateIBAN(){
-        this.bAC.calculateIBAN();
-    }
-    
-    public String getIBAN(){
-        return this.bAC.getIBAN();
-    }
-    
-    
+
 }

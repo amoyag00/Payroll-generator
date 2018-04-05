@@ -1,3 +1,10 @@
+
+/**
+ * Test class used for testing ExcelController.java. This class creates a
+ * temporal copy of the excelTest file and perfoms operations in that temporal
+ * copy. After finish the testing the temporal copy is deleted.
+ */
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -15,13 +22,7 @@ import static org.junit.Assert.*;
 import sis2.ExcelController;
 
 /**
- * Test class used for testing ExcelController.java. This class creates a
- * temporal copy of the excelTest file and perfoms operations in that temporal
- * copy. After finish the testing the temporal copy is deleted.
- */
-
-/**
- * @version 1.0 07/03/2018
+ * @version 2.0 05/04/2018
  * @author Alejandro Moya García
  */
 public class ExcelControllerTest {
@@ -104,7 +105,7 @@ public class ExcelControllerTest {
         boolean contains = false;
 
         String path = System.getProperty("user.dir") + "/resources/"
-                +fileName+".xml";
+                + fileName + ".xml";
         eC.iterateDocument();
         try {
             eC.generateXML();
@@ -119,7 +120,6 @@ public class ExcelControllerTest {
             }
             fileReader.close();
 
-            
         } catch (IOException ex) {
             Logger.getLogger(ExcelControllerTest.class.getName())
                     .log(Level.SEVERE, null, ex);
@@ -141,13 +141,13 @@ public class ExcelControllerTest {
 
     @Test
     public void testDupXML() {
-        assertTrue(checkPatternXML("Mohamed","Errores"));
+        assertTrue(checkPatternXML("Mohamed", "Errores"));
 
     }
 
     @Test
     public void testBlankXML() {
-        assertTrue(checkPatternXML("Demetrio","Errores"));
+        assertTrue(checkPatternXML("Demetrio", "Errores"));
 
     }
 
@@ -156,29 +156,31 @@ public class ExcelControllerTest {
      */
     @Test
     public void dupAfterCorrection() {
-        assertTrue(checkPatternXML("Marta","Errores"));
+        assertTrue(checkPatternXML("Marta", "Errores"));
     }
-    
+
     @Test
-    public void generatedIBAN(){
+    public void generatedIBAN() {
         eC.iterateDocument();
         try {
             eC.updateFile();
         } catch (IOException ex) {
-            Logger.getLogger(ExcelControllerTest.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ExcelControllerTest.class.getName())
+                    .log(Level.SEVERE, null, ex);
         }
-        assertEquals("ES3520960043043554600000",eC.getCell(1, 16));
+        assertEquals("ES3520960043043554600000", eC.getCell(1, 16));
     }
-    
-        @Test
-    public void generatedEmail(){
+
+    @Test
+    public void generatedEmail() {
         eC.iterateDocument();
         try {
             eC.updateFile();
         } catch (IOException ex) {
-            Logger.getLogger(ExcelControllerTest.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ExcelControllerTest.class.getName())
+                    .log(Level.SEVERE, null, ex);
         }
-        assertEquals("MohAh00@TecnoLeonSL.es",eC.getCell(1, 4));
+        assertEquals("MohAh00@TecnoLeonSL.es", eC.getCell(1, 4));
     }
 
 }

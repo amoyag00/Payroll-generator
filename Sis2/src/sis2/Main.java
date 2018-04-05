@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.logging.Logger;
 
 /**
- * @version 1.0 07/03/2018
+ * @version 2.0 05/04/2018
  * @author Alejandro Moya García
  */
 public class Main {
