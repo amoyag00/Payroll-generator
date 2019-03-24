@@ -10,12 +10,13 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 /**
- * @version 2.0 05/04/2018
+ * @version 4.0 02/06/2018
  * @author Alejandro Moya García
  */
 public class MyLogger {
 
-    private static final String LOGFILE_PATH = System.getProperty("user.dir") + "/resources/sis2.log";
+    private static final String LOGFILE_PATH = System.getProperty("user.dir") + 
+            "/resources/sis2.log";
     private static Logger instance;
 
     /**
@@ -30,9 +31,11 @@ public class MyLogger {
             try {
                 fileHandler = new FileHandler(LOGFILE_PATH, true);
             } catch (IOException ex) {
-                Logger.getLogger(MyLogger.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(MyLogger.class.getName()).log(Level.SEVERE,
+                        null, ex);
             } catch (SecurityException ex) {
-                Logger.getLogger(MyLogger.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(MyLogger.class.getName()).log(Level.SEVERE,
+                        null, ex);
             }
             instance.addHandler(fileHandler);
             SimpleFormatter formatter = new SimpleFormatter();

@@ -7,7 +7,7 @@ package sis2;
 import java.util.logging.Logger;
 
 /**
- * @version 2.0 05/04/2018
+ * @version 4.0 02/06/2018
  * @author Alejandro Moya García
  */
 public class ID {

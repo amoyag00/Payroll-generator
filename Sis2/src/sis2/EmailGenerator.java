@@ -1,8 +1,8 @@
 /**
- * Generates an e-mail for an employee.
- * Preconditions: There will not be more than 100 employees with the same
- * pattern and there will not be employees whose name has less than 3 letters,
- * first surnames with less than 2, or  empty names or company names.
+ * Generates an e-mail for an employee. Preconditions: There will not be more
+ * than 100 employees with the same pattern and there will not be employees
+ * whose name has less than 3 letters, first surnames with less than 2, or empty
+ * names or company names.
  *
  */
 package sis2;
@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @version 2.0 05/04/2018
+ * @version 4.0 02/06/2018
  * @author Alejandro Moya García
  */
 public class EmailGenerator {

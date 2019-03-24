@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/nominas?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">123455</property>
+    <mapping class="sis2.Category" file="" jar="" package="" resource="hibernate/Categorias.hbm.xml"/>
+    <mapping class="sis2.Payroll" file="" jar="" package="" resource="hibernate/Nomina.hbm.xml"/>
+    <mapping class="sis2.Company" file="" jar="" package="" resource="hibernate/Empresas.hbm.xml"/>
+    <mapping class="sis2.Employee" file="" jar="" package="" resource="hibernate/Trabajadorbbdd.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

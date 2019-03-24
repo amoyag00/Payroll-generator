@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22-may-2018 18:55:32 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sis2.Category" table="categorias" catalog="nominas" optimistic-lock="version">
+        <id name="idCategory" type="java.lang.Integer">
+            <column name="IdCategoria" />
+            <generator class="identity" />
+        </id>
+        <property name="categoryName" type="string">
+            <column name="NombreCategoria" length="75" not-null="true" />
+        </property>
+        <property name="basePayroll" type="double">
+            <column name="SalarioBaseCategoria" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="complement" type="double">
+            <column name="ComplementoCategoria" precision="22" scale="0" not-null="true" />
+        </property>
+        <set name="trabajadorbbdds" table="trabajadorbbdd" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="IdCategoria" not-null="true" />
+            </key>
+            <one-to-many class="sis2.Employee" />
+        </set>
+    </class>
+</hibernate-mapping>

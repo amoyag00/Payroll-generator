@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @version 2.0 05/04/2018
+ * @version 4.0 2/06/2018
  * @author Alejandro Moya García
  */
 public class BankAccountCode {
@@ -76,8 +76,9 @@ public class BankAccountCode {
 
         correctCD = calculateControlDigit(auxOffEnt);
         if (!correctCD.equals(this.controlDigit1)) {
-            LOGGER.info("Account number " + this.oldCode + " was wrong. Control digit"
-                    + " 1 is " + correctCD + " instead of " + this.controlDigit1);
+            LOGGER.info("Account number " + this.oldCode + " was wrong. Control"
+                    + "digit  1 is " + correctCD + " instead of " + 
+                    this.controlDigit1);
 
             corrected = true;
             this.controlDigit1 = correctCD;
@@ -85,8 +86,9 @@ public class BankAccountCode {
 
         correctCD = calculateControlDigit(this.accountNumber);
         if (!correctCD.equals(this.controlDigit2)) {
-            LOGGER.info("Account number " + this.oldCode + " was wrong. Control digit"
-                    + " 2 is " + correctCD + " instead of " + this.controlDigit2);
+            LOGGER.info("Account number " + this.oldCode + " was wrong. Control"
+                    + " digit 2 is " + correctCD + " instead of " +
+                    this.controlDigit2);
 
             corrected = true;
             this.controlDigit2 = correctCD;

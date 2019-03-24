@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22-may-2018 18:55:32 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sis2.Payroll" table="nomina" catalog="nominas" optimistic-lock="version">
+        <id name="idPayroll" type="java.lang.Integer">
+            <column name="IdNomina" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="employee" class="sis2.Employee" fetch="select">
+            <column name="IdTrabajador" not-null="true" />
+        </many-to-one>
+        <property name="month" type="int">
+            <column name="Mes" not-null="true" />
+        </property>
+        <property name="year" type="int">
+            <column name="Anio" not-null="true" />
+        </property>
+        <property name="numThreeYears" type="int">
+            <column name="NumeroTrienios" not-null="true" />
+        </property>
+        <property name="moneyThreeYears" type="double">
+            <column name="ImporteTrienios" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="monthlySalary" type="double">
+            <column name="importeSalarioMes" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="monthlyComplement" type="double">
+            <column name="importeComplementoMes" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="proRateValue" type="double">
+            <column name="ValorProrrateo" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="yearlyGross" type="double">
+            <column name="brutoAnual" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="irpf" type="double">
+            <column name="IRPF" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="irpfMoney" type="double">
+            <column name="ImporteIRPF" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="regulatoryBase" type="double">
+            <column name="BaseEmpresario" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="commonContingenciesEntr" type="double">
+            <column name="SeguridadSocialEmpresario" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="commonContingenciesMoneyEntr" type="double">
+            <column name="ImporteSeguridadSocialEmpresario" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="disempEntr" type="double">
+            <column name="DesempleoEmpresario" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="disempMoneyEntr" type="double">
+            <column name="ImporteDesempleoEmpresario" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="formationEntr" type="double">
+            <column name="FormacionEmpresario" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="formationMoneyEntr" type="double">
+            <column name="ImporteFormacionEmpresario" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="accidentsEntr" type="double">
+            <column name="AccidentesTrabajoEmpresario" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="accidentsMoneyEntr" type="double">
+            <column name="ImporteAccidentesTrabajoEmpresario" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="fogasaEntr" type="double">
+            <column name="FOGASAEmpresario" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="fogasaMoneyEntr" type="double">
+            <column name="ImporteFOGASAEMpresario" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="generalContingenciesEmp" type="double">
+            <column name="SeguridadSocialTrabajador" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="generalContingenciesMoneyEmp" type="double">
+            <column name="ImporteSeguridadSocialTrabajador" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="disempEmp" type="double">
+            <column name="DesempleoTrabajador" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="disempMoneyEmp" type="double">
+            <column name="ImporteDesempleoTrabajador" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="formationEmp" type="double">
+            <column name="FormacionTrabajador" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="formationMoneyEmp" type="double">
+            <column name="ImporteFormacionTrabajador" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="monthlyGross" type="double">
+            <column name="BrutoNomina" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="liquid" type="double">
+            <column name="LiquidoNomina" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="totalCostEntr" type="double">
+            <column name="CosteTotalEmpresario" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

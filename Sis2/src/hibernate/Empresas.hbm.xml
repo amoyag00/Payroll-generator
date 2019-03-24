@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22-may-2018 18:55:32 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="sis2.Company" table="empresas" catalog="nominas" optimistic-lock="version">
+        <id name="idCompany" type="java.lang.Integer">
+            <column name="IdEmpresa" />
+            <generator class="identity" />
+        </id>
+        <property name="companyName" type="string">
+            <column name="Nombre" length="100" not-null="true" />
+        </property>
+        <property name="CIF" type="string">
+            <column name="CIF" length="10" not-null="true" />
+        </property>
+        <set name="trabajadorbbdds" table="trabajadorbbdd" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="IdEmpresa" not-null="true" />
+            </key>
+            <one-to-many class="sis2.Employee" />
+        </set>
+    </class>
+</hibernate-mapping>
